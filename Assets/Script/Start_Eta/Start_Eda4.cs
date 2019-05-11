@@ -9,9 +9,12 @@ public class Start_Eda4 : MonoBehaviour
 
     void Update()
     {
-        if (OFF)
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            OFF = true;
+        }
+            if (OFF)
         {
-            this.transform.position = new Vector3(transform.position.x + 0.1f, transform.position.y + 0.1f, 15.0f);
+            this.transform.position = new Vector3(transform.position.x - 0.1f, transform.position.y + 0.1f, 15.0f);
             if (i)
             {
                 Debug.Log("Eta1ON");
