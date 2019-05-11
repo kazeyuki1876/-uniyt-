@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Start_Eta3 : MonoBehaviour
+public class Start_Eda2 : MonoBehaviour
 {
     public bool OFF = false;
     bool i = true;
