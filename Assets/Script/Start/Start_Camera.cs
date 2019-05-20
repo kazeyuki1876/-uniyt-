@@ -47,11 +47,16 @@ public class Start_Camera : MonoBehaviour
                 Debug.Log("OFF");
                 i = false;
             }
-        
+
     }
+    //カメラMAXサイズ13.7今までの方がいい
+    //カメラMINサイズ10.9
+    //巻き0.61
+    //いたスト　2.02
+
     void Enlarge() {
         if (CameraEnlarge) {
-            if (Camera.main.orthographicSize >= 10.01f) //小于一个放大范围后就不继续放大了 
+            if (Camera.main.orthographicSize >= 10.01f) //小于一个放大范围后就不继续放大了 //
             {
                 Camera.main.orthographicSize = Camera.main.orthographicSize - 0.05f;
             }
