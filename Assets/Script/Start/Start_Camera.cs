@@ -70,6 +70,7 @@ public class Start_Camera : MonoBehaviour
     }
 
     void daiyong() {
+        Debug.Log("OK");
         /*if (Input.GetKeyDown(KeyCode.J))
         {
             OFF = true;
@@ -86,5 +87,7 @@ public class Start_Camera : MonoBehaviour
        
         */
     }
+   
+
 }
 
