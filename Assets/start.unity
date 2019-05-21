@@ -14565,10 +14565,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b42016730c92324897b4b965739c4b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OFFtest: 0
-  CameraMetastasis: 0
-  CameraEnlarge: 0
-  Acceleration: 0
+  CameraMetastasisSwitch: 0
+  CameraEnlargeswitch: 0
+  Acceleration: 0.1
+  MAXAcceleration: 0.5
+  TransformPositionY: -300
 --- !u!1 &308280315
 GameObject:
   m_ObjectHideFlags: 0
@@ -24276,7 +24277,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5eb13d95bb7b044da8a51f61ce202aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test: 1
+  test: 0
+  CahngeAlpha_Speed: 0.5
 --- !u!212 &729524585
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38898,7 +38900,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39af2bc49ba0b7a4cb37a3131e79acff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Camera: {fileID: 182437826}
   TitleText: {fileID: 729524583}
 --- !u!1 &1197100104
 GameObject:

@@ -4,58 +4,35 @@ using UnityEngine;
 
 public class Start_Camera : MonoBehaviour
 {
-
-    public  bool OFFtest;
-
-    
-
-    public bool CameraMetastasis = false;//カメラ転移
-    public bool CameraEnlarge = false;//カメラ拡大
-    
-
-
-    bool i = true;
-
-    public float Acceleration = 0.1f;
-    public void Start()
-    {
-        Camera.main.orthographicSize = 13.7f;
-
-       //OFFtest = GameObject.Find("Titel").GetComponent<Start_TitelTransparent>().test;
-       
-    }
-
-
-    void Update()
-    {
-        OFFtest = false;
-        if (Input.GetKeyDown(KeyCode.J)) {
-            CameraEnlarge = true;
-        }
-        Enlarge();
-
-        if (Acceleration > 0.5f)
-        {
-            Acceleration = 0.5f;
-        }
-       
-            this.transform.position = new Vector3(transform.position.x - Acceleration, transform.position.y, -10.0f);
-
-            Acceleration = Acceleration + Time.deltaTime * 0.02f;
-            if (i)
-            {
-                Debug.Log("OFF");
-                i = false;
-            }
-
-    }
     //カメラMAXサイズ13.7今までの方がいい
     //カメラMINサイズ10.9
     //巻き0.61
     //いたスト　2.02
+    public bool CameraMetastasisSwitch = false;//カメラ転移
+    public bool CameraEnlargeswitch = false;//カメラ拡大
+    bool i = true;
+    public float Acceleration;//移転速度
+    public float MAXAcceleration;//MAX移転速度
+    public float TransformPositionY;
+    public void Start()
+    {
+        Camera.main.orthographicSize = 13.7f;
+    }
+    void Update()
+    {
 
-    void Enlarge() {
-        if (CameraEnlarge) {
+        CameraMetastasis();
+        CameraEnlarge();
+
+    }
+
+    void CameraMetastasisON() {
+        CameraMetastasisSwitch = true;
+        Debug.Log("CameraMetastasisON" + CameraMetastasisSwitch);
+    }
+
+    void CameraMetastasis() {
+        if (CameraMetastasisSwitch) {
             if (Camera.main.orthographicSize >= 10.01f) //小于一个放大范围后就不继续放大了 //
             {
                 Camera.main.orthographicSize = Camera.main.orthographicSize - 0.05f;
@@ -63,31 +40,58 @@ public class Start_Camera : MonoBehaviour
             else
             {
                 Camera.main.orthographicSize = 10.0f;
-                CameraEnlarge = false;
+                CameraMetastasisSwitch = false;
+                GameObject.Find("StartController").SendMessage("TitelTransparent");//能调用public和private类型函数
+                Debug.Log("CameraMetastasis" + CameraMetastasisSwitch+ "orthographicSize" + Camera.main.orthographicSize);
             }
         }
-       
     }
+    void CameraEnlargeON() {
+        CameraEnlargeswitch = true;
+        Debug.Log("CameraEnlargeswitch" + CameraEnlargeswitch);
 
-    void daiyong() {
-        Debug.Log("OK");
-        /*if (Input.GetKeyDown(KeyCode.J))
+    }
+    void CameraEnlarge(){
+        if (CameraEnlargeswitch && this.transform.position.y> TransformPositionY)
         {
-            OFF = true;
-        }
-
-        if (OFF2 == true)
-        {
-            if (Camera.main.orthographicSize >= 5.1f) //小于一个放大范围后就不继续放大了 
+            if (Acceleration > MAXAcceleration)
             {
-                Camera.main.orthographicSize = Camera.main.orthographicSize - 0.05f;
+                Acceleration = MAXAcceleration;
             }
+            this.transform.position = new Vector3(transform.position.x - Acceleration, transform.position.y, -10.0f);
+
+            Acceleration = Acceleration + Time.deltaTime * 0.02f;
+        }
+        else if(CameraEnlargeswitch &&this.transform.position.y < TransformPositionY)
+        {
+            this.transform.position = new Vector3(transform.position.x - Acceleration, TransformPositionY, -10.0f);
+            CameraEnlargeswitch = false;
+            Debug.Log("転移完成　CameraEnlarge" + CameraEnlargeswitch + "transform.position.y" + this.transform.position.y);
+            GameObject.Find("StartController").SendMessage("Shi");
         }
 
-       
-        */
+    }
+    /*
+    void CameraMetastasis() {
+        Debug.Log("OK");
+       // OFFtest = false;
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            CameraEnlargeswitch = true;
+        }
+        Enlarge();
+
+        
+        if (i)
+        {
+            Debug.Log("OFF");
+            i = false;
+        }
+
+
+        
     }
    
-
+    */
 }
 
