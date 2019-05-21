@@ -13,7 +13,7 @@ public class Start_Camera : MonoBehaviour
     bool i = true;
     public float Acceleration;//移転速度
     public float MAXAcceleration;//MAX移転速度
-    public float TransformPositionY;
+    public float TransformPositionX;
     public void Start()
     {
         Camera.main.orthographicSize = 13.7f;
@@ -52,7 +52,7 @@ public class Start_Camera : MonoBehaviour
 
     }
     void CameraEnlarge(){
-        if (CameraEnlargeswitch && this.transform.position.y> TransformPositionY)
+        if (CameraEnlargeswitch && this.transform.position.x> TransformPositionX)
         {
             if (Acceleration > MAXAcceleration)
             {
@@ -62,9 +62,9 @@ public class Start_Camera : MonoBehaviour
 
             Acceleration = Acceleration + Time.deltaTime * 0.02f;
         }
-        else if(CameraEnlargeswitch &&this.transform.position.y < TransformPositionY)
+        else if(CameraEnlargeswitch &&this.transform.position.x < TransformPositionX)
         {
-            this.transform.position = new Vector3(transform.position.x - Acceleration, TransformPositionY, -10.0f);
+            this.transform.position = new Vector3(TransformPositionX, transform.position.y, -10.0f);
             CameraEnlargeswitch = false;
             Debug.Log("転移完成　CameraEnlarge" + CameraEnlargeswitch + "transform.position.y" + this.transform.position.y);
             GameObject.Find("StartController").SendMessage("Shi");
