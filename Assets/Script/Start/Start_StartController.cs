@@ -34,11 +34,13 @@ public class Start_StartController : MonoBehaviour
         GameObject.Find("Main Camera").SendMessage("CameraEnlargeON");// カメラ移動、
     }
     //
-    void Stagebudge() {
+    void StagebudgeOn() {
+        Invoke("Stagebudge", 10.0f);
         Debug.Log("シーンの転移だ");
+     
+    }
+    void Stagebudge (){
         SceneManager.LoadScene("M");//シーンの切り替え
-        
-
     }
     void Ochi() {
         Ochihana1 = Instantiate(Ochihana1, new Vector3(-20.0f,30.0f, 15.0f), Quaternion.identity);　//花びらが上のから落ちるエフェクト
