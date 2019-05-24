@@ -25,6 +25,7 @@ public class Start_UmeNoHanabira : MonoBehaviour
                 this.transform.position = new Vector3(transform.position.x + Speed, transform.position.y - Speed, -0.0f);
             }
         }
+       // if () { }
         // this.transform.position = new Vector3(transform.position.x - Speed, transform.position.y, -10.0f);
     }
     void ImejiMetastasisSwitchON()

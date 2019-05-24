@@ -8,7 +8,7 @@ public class Start_TitelTransparent : MonoBehaviour
 
     //GameObject.Find("GameObject.name").GetComponent<sparent.name>().Void.name();
     public bool test = true;
-    public static bool TitelTransparentSwitch = false; //
+    public  bool TitelTransparentSwitch = false; //
     //Color RGBA
     float changeRed = 1.0f;
     float changeGreen = 1.0f;
