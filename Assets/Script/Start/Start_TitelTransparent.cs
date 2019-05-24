@@ -23,40 +23,16 @@ public class Start_TitelTransparent : MonoBehaviour
     void Update()
     {
         TitelTransparent();
-        Release();
+      
     }
     void TitelTransparentON() {
         TitelTransparentSwitch = true;
-        ReleaseOFF = false;
+       
     }
     bool I =false;
     void TitelTransparent()
     {
-        if (TitelTransparentSwitch&& !I)
-        {
-            if (this.transform.localScale.x < 5)
-            {
-                this.transform.localScale = new Vector3(transform.localScale.x + Measure, transform.localScale.y + Measure, 1);
-            }
-            else
-            {
-                this.transform.localScale = new Vector3(5.0f, 5.0f, 1);
-                I = true;
-            }
-            if (this.transform.localScale.x > 5)
-            {
-                this.transform.localScale = new Vector3(transform.localScale.x + Measure, transform.localScale.y + Measure, 1);
-            }
-            else
-            {
-                this.transform.localScale = new Vector3(5.0f, 5.0f, 1);
-                 I = true;
-            }
-        }
-       
-
-
-        
+      
         if (TitelTransparentSwitch && cahngeAlpha > 0.0f)
         {
             cahngeAlpha = cahngeAlpha - Time.deltaTime * CahngeAlpha_Speed;
@@ -77,24 +53,5 @@ public class Start_TitelTransparent : MonoBehaviour
     public float MINScale =5;
     public float MAXScale=6;
 
-    void Release()
-    {
-        if (ReleaseOFF) { 
-            if (ReleaseOstatus && this.transform.localScale.x < MAXScale)
-            {
-                this.transform.localScale = new Vector3(transform.localScale.x + Measure, transform.localScale.y + Measure, 1);
-            } else if(ReleaseOstatus && this.transform.localScale.x > MAXScale)
-            {
-                ReleaseOstatus = false;
-            }
-            if (!ReleaseOstatus && this.transform.localScale.x > MINScale)
-            {
-                this.transform.localScale = new Vector3(transform.localScale.x - Measure, transform.localScale.y - Measure, 1);
-            }
-            else if (!ReleaseOstatus && this.transform.localScale.x < MINScale)
-            {
-                ReleaseOstatus = true;
-            }
-        }
-    }
+    
 }
