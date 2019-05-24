@@ -33,7 +33,6 @@ Transform:
   - {fileID: 2933242976063912056}
   - {fileID: 2933242976822458277}
   - {fileID: 2933242975693569123}
-  - {fileID: 2933242975874944616}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -44,11 +43,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5246976454397373375}
     m_Modifications:
-    - target: {fileID: 6946232583724242634, guid: 884175bfb58115c458b99c2d0f1dd753,
-        type: 3}
-      propertyPath: m_Name
-      value: Haikei (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 6946232583724242632, guid: 884175bfb58115c458b99c2d0f1dd753,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -114,6 +108,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.61
       objectReference: {fileID: 0}
+    - target: {fileID: 6946232583724242634, guid: 884175bfb58115c458b99c2d0f1dd753,
+        type: 3}
+      propertyPath: m_Name
+      value: Haikei (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 6946232583724242633, guid: 884175bfb58115c458b99c2d0f1dd753,
         type: 3}
       propertyPath: m_SortingOrder
@@ -140,11 +139,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5246976454397373375}
     m_Modifications:
-    - target: {fileID: 6946232583724242634, guid: 884175bfb58115c458b99c2d0f1dd753,
-        type: 3}
-      propertyPath: m_Name
-      value: Haikei (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 6946232583724242632, guid: 884175bfb58115c458b99c2d0f1dd753,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -210,6 +204,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.61
       objectReference: {fileID: 0}
+    - target: {fileID: 6946232583724242634, guid: 884175bfb58115c458b99c2d0f1dd753,
+        type: 3}
+      propertyPath: m_Name
+      value: Haikei (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 6946232583724242633, guid: 884175bfb58115c458b99c2d0f1dd753,
         type: 3}
       propertyPath: m_SortingOrder
@@ -236,11 +235,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5246976454397373375}
     m_Modifications:
-    - target: {fileID: 6946232583724242634, guid: 884175bfb58115c458b99c2d0f1dd753,
-        type: 3}
-      propertyPath: m_Name
-      value: Haikei (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 6946232583724242632, guid: 884175bfb58115c458b99c2d0f1dd753,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -306,6 +300,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.61
       objectReference: {fileID: 0}
+    - target: {fileID: 6946232583724242634, guid: 884175bfb58115c458b99c2d0f1dd753,
+        type: 3}
+      propertyPath: m_Name
+      value: Haikei (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 6946232583724242633, guid: 884175bfb58115c458b99c2d0f1dd753,
         type: 3}
       propertyPath: m_SortingOrder
@@ -325,102 +324,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5246976454987702209}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &5246976455531763872
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 5246976454397373375}
-    m_Modifications:
-    - target: {fileID: 6946232583724242634, guid: 884175bfb58115c458b99c2d0f1dd753,
-        type: 3}
-      propertyPath: m_Name
-      value: Haikei (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6946232583724242632, guid: 884175bfb58115c458b99c2d0f1dd753,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.32
-      objectReference: {fileID: 0}
-    - target: {fileID: 6946232583724242632, guid: 884175bfb58115c458b99c2d0f1dd753,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -24.64
-      objectReference: {fileID: 0}
-    - target: {fileID: 6946232583724242632, guid: 884175bfb58115c458b99c2d0f1dd753,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -50
-      objectReference: {fileID: 0}
-    - target: {fileID: 6946232583724242632, guid: 884175bfb58115c458b99c2d0f1dd753,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6946232583724242632, guid: 884175bfb58115c458b99c2d0f1dd753,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6946232583724242632, guid: 884175bfb58115c458b99c2d0f1dd753,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6946232583724242632, guid: 884175bfb58115c458b99c2d0f1dd753,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6946232583724242632, guid: 884175bfb58115c458b99c2d0f1dd753,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6946232583724242632, guid: 884175bfb58115c458b99c2d0f1dd753,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6946232583724242632, guid: 884175bfb58115c458b99c2d0f1dd753,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6946232583724242632, guid: 884175bfb58115c458b99c2d0f1dd753,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6946232583724242632, guid: 884175bfb58115c458b99c2d0f1dd753,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.61
-      objectReference: {fileID: 0}
-    - target: {fileID: 6946232583724242632, guid: 884175bfb58115c458b99c2d0f1dd753,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.61
-      objectReference: {fileID: 0}
-    - target: {fileID: 6946232583724242633, guid: 884175bfb58115c458b99c2d0f1dd753,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6946232583724242633, guid: 884175bfb58115c458b99c2d0f1dd753,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: e88ec5bdea2dffc4b84431561a067f5f,
-        type: 3}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 884175bfb58115c458b99c2d0f1dd753, type: 3}
---- !u!4 &2933242975874944616 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6946232583724242632, guid: 884175bfb58115c458b99c2d0f1dd753,
-    type: 3}
-  m_PrefabInstance: {fileID: 5246976455531763872}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5246976455720726192
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -428,11 +331,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5246976454397373375}
     m_Modifications:
-    - target: {fileID: 6946232583724242634, guid: 884175bfb58115c458b99c2d0f1dd753,
-        type: 3}
-      propertyPath: m_Name
-      value: Haikei (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 6946232583724242632, guid: 884175bfb58115c458b99c2d0f1dd753,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -498,6 +396,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.61
       objectReference: {fileID: 0}
+    - target: {fileID: 6946232583724242634, guid: 884175bfb58115c458b99c2d0f1dd753,
+        type: 3}
+      propertyPath: m_Name
+      value: Haikei (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 6946232583724242633, guid: 884175bfb58115c458b99c2d0f1dd753,
         type: 3}
       propertyPath: m_SortingOrder
@@ -529,11 +432,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5246976454397373375}
     m_Modifications:
-    - target: {fileID: 6946232583724242634, guid: 884175bfb58115c458b99c2d0f1dd753,
-        type: 3}
-      propertyPath: m_Name
-      value: Haikei (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 6946232583724242632, guid: 884175bfb58115c458b99c2d0f1dd753,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -599,6 +497,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.61
       objectReference: {fileID: 0}
+    - target: {fileID: 6946232583724242634, guid: 884175bfb58115c458b99c2d0f1dd753,
+        type: 3}
+      propertyPath: m_Name
+      value: Haikei (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 6946232583724242633, guid: 884175bfb58115c458b99c2d0f1dd753,
         type: 3}
       propertyPath: m_SortingOrder
@@ -625,11 +528,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5246976454397373375}
     m_Modifications:
-    - target: {fileID: 6946232583724242634, guid: 884175bfb58115c458b99c2d0f1dd753,
-        type: 3}
-      propertyPath: m_Name
-      value: Haikei
-      objectReference: {fileID: 0}
     - target: {fileID: 6946232583724242632, guid: 884175bfb58115c458b99c2d0f1dd753,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -694,6 +592,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946232583724242634, guid: 884175bfb58115c458b99c2d0f1dd753,
+        type: 3}
+      propertyPath: m_Name
+      value: Haikei
       objectReference: {fileID: 0}
     - target: {fileID: 6946232583724242633, guid: 884175bfb58115c458b99c2d0f1dd753,
         type: 3}
