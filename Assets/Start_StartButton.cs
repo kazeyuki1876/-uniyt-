@@ -10,8 +10,7 @@ public class Start_StartButton : MonoBehaviour
     public void OnClick()
     {
         if (OnClickOFF) {
-            GameObject.Find("StartController").SendMessage("CameraMetastasis");// カメラ縮小
-            Debug.Log("おされた");
+            GameObject.Find("StartController").SendMessage("GameStart");// GameStart     
             OnClickOFF = false;
         }
        

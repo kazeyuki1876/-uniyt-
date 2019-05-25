@@ -6,16 +6,9 @@ public class Start_TitelImeji : MonoBehaviour
 {
    
     public bool UmehanaScaleEnlargeswitch = false;
-    public float Acceleration;//加速度
-    public float MAXAcceleration;//MAX
+    public float Acceleration;//サイズ拡大速度
+    public float MAXAcceleration;//MAXサイズ
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         UmehanaScaleEnlarge();
@@ -25,10 +18,15 @@ public class Start_TitelImeji : MonoBehaviour
         UmehanaScaleEnlargeswitch = true;
     }
     void UmehanaScaleEnlarge(){
-        if (UmehanaScaleEnlargeswitch) { 
-         if (this.transform.localScale.x < MAXAcceleration) {
-           
-            this.transform.localScale = new Vector3(transform.localScale.x + Acceleration, transform.localScale.y + Acceleration, 1.0f);
+        if (UmehanaScaleEnlargeswitch) {
+            if (this.transform.localScale.x < MAXAcceleration)
+            {
+
+                this.transform.localScale = new Vector3(transform.localScale.x + Acceleration, transform.localScale.y + Acceleration, 1.0f);
+            }
+            else {
+                UmehanaScaleEnlargeswitch = false;
+                GameObject.Find("StartController").SendMessage("GameStart");// GameStartに戻り
             }
         }
     }

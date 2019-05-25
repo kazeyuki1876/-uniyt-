@@ -11,6 +11,7 @@ public class Start_Camera : MonoBehaviour
     いたスト　2.02*/
     public bool CameraMetastasisSwitch = false;//カメラ転移
     public bool CameraEnlargeswitch = false;//カメラ拡大
+    public bool CameraNihanawoOFF =true;
     bool i = true;
     public float Speed;//移転速度
     public float Acceleration;//加速度
@@ -24,6 +25,7 @@ public class Start_Camera : MonoBehaviour
     {
         CameraMetastasis();
         CameraEnlarge();
+        CameraHana();
     }
 
     void CameraMetastasisON() {
@@ -64,6 +66,14 @@ public class Start_Camera : MonoBehaviour
             Debug.Log("転移完成　CameraEnlarge" + CameraEnlargeswitch + "transform.position.y" + this.transform.position.y);//StartControllerに戻る
             GameObject.Find("StartController").SendMessage("Stagebudge");
         }
+    }
+    void CameraHana(){
+        if (this.transform.position.x < -250.0f && CameraNihanawoOFF)
+        {
+            CameraNihanawoOFF = false;
+            GameObject.Find("ume").SendMessage("ImejiMetastasisSwitchON");// カメラ移動、
+        }
+
     }
 }
 

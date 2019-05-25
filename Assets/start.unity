@@ -4892,6 +4892,26 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &30226402 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2492132087936756809, guid: e7cecfc2e1724424191f2b1de7029409,
+    type: 3}
+  m_PrefabInstance: {fileID: 2492132087730935843}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &30226405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30226402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8f63ae5a7e9e494bac3b174687181b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EtaaMetastasisSwitch: 0
+  Acceleration: 0.2
 --- !u!1 &123375205
 GameObject:
   m_ObjectHideFlags: 0
@@ -9771,9 +9791,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CameraMetastasisSwitch: 0
   CameraEnlargeswitch: 0
+  CameraNihanawoOFF: 1
   Speed: 0.2
   Acceleration: 0.1
-  MAXAcceleration: 0.6
+  MAXAcceleration: 1
   TransformPositionX: -300
 --- !u!1 &223084667
 GameObject:
@@ -33741,6 +33762,26 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &365985989 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2492132089205104380, guid: e7cecfc2e1724424191f2b1de7029409,
+    type: 3}
+  m_PrefabInstance: {fileID: 2492132087730935843}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &365985992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365985989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18c4cfe208c3b714bab49767b5472d80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EtaaMetastasisSwitch: 0
+  Acceleration: 0.2
 --- !u!1 &399101119
 GameObject:
   m_ObjectHideFlags: 0
@@ -52880,7 +52921,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d2d323996b24434cbaee2c1c85b5466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UmehanaScaleEnlargeswitch: 1
+  UmehanaScaleEnlargeswitch: 0
   Acceleration: 0.1
   MAXAcceleration: 4
 --- !u!1 &940912003
@@ -76829,6 +76870,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Ochihana1: {fileID: 353351764109681563, guid: 76c05cfb10404404787b51d5ab8ca872,
     type: 3}
+  i: 0
 --- !u!1 &1403520319
 GameObject:
   m_ObjectHideFlags: 0
@@ -86474,7 +86516,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 37b054f744a357a4aa1649d7aed539ce, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1c54f9cbda4c68a40ad932558ba599de, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -86482,7 +86524,7 @@ SpriteRenderer:
   m_Size: {x: 2.69, y: 2.61}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1604184733
@@ -106286,12 +106328,12 @@ PrefabInstance:
     - target: {fileID: 8063164994283986067, guid: 83141957e1254db47b87f8864d958403,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8063164994791536995, guid: 83141957e1254db47b87f8864d958403,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83141957e1254db47b87f8864d958403, type: 3}
