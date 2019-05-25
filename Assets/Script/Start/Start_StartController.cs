@@ -8,17 +8,7 @@ public class Start_StartController : MonoBehaviour
     // Start is called before the first frame update
     //public GameObject Camera;
     public GameObject Ochihana1;
-    //GameObject.Find("脚本所在的物体的名字").SendMessage("函数名");//能调用public和private类型函数
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    //GameObject.Find("GameObject.name").SendMessage("Void.ma,e");//public private
     void CameraMetastasis() {
          Invoke("Ochi", 0.30f);
         GameObject.Find("Main Camera").SendMessage("CameraMetastasisON");// カメラ縮小

@@ -4,23 +4,32 @@ using UnityEngine;
 
 public class Start_TitelImeji : MonoBehaviour
 {
-    public float UmehanaScaleX;
-    public float UmehanaScaleY;
+   
+    public bool UmehanaScaleEnlargeswitch = false;
+    public float Acceleration;//加速度
+    public float MAXAcceleration;//MAX
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (UmehanaScaleX < 0.15f) { 
-        UmehanaScaleX = UmehanaScaleX + Time.deltaTime*0.2f;
-        UmehanaScaleY = UmehanaScaleY + Time.deltaTime*0.2f;
-        this.transform.localScale = new Vector3(transform.localScale.x + UmehanaScaleX, transform.localScale.y  +UmehanaScaleY, 1.0f );
-        }
+        UmehanaScaleEnlarge();
 
+    }
+    void UmehanaScaleEnlargeswitchNO() {
+        UmehanaScaleEnlargeswitch = true;
+    }
+    void UmehanaScaleEnlarge(){
+        if (UmehanaScaleEnlargeswitch) { 
+         if (this.transform.localScale.x < MAXAcceleration) {
+           
+            this.transform.localScale = new Vector3(transform.localScale.x + Acceleration, transform.localScale.y + Acceleration, 1.0f);
+            }
+        }
     }
 }
