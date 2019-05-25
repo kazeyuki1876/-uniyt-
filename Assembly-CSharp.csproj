@@ -55,13 +55,13 @@
   <ItemGroup>
      <Compile Include="Assets\Script\Start\OchiHANA.cs" />
      <Compile Include="Assets\Script\Start\Start_Camera.cs" />
+     <Compile Include="Assets\Script\Start\Start_StartButton.cs" />
      <Compile Include="Assets\Script\Start\Start_StartController.cs" />
+     <Compile Include="Assets\Script\Start\Start_TitelImeji.cs" />
      <Compile Include="Assets\Script\Start\Start_TitelTransparent.cs" />
+     <Compile Include="Assets\Script\Start\Start_UmeL.cs" />
      <Compile Include="Assets\Script\Start\Start_UmeNoHanabira.cs" />
-     <Compile Include="Assets\Start_StartButton.cs" />
-     <Compile Include="Assets\Start_TitelImeji.cs" />
-     <Compile Include="Assets\Start_UmeL.cs" />
-     <Compile Include="Assets\Start_UmeR.cs" />
+     <Compile Include="Assets\Script\Start\Start_UmeR.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/student/Documents/GitHub/-uniyt-/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
