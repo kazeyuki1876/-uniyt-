@@ -26,10 +26,10 @@ public class Start_UmeNoHanabira : MonoBehaviour
     void ImejiMetastasis() {
         if (ImejiMetastasisSwitch)
         {
-            if (this.transform.position.x < EndiCHI)//EndiCHI =0;
+            if (this.transform.position.y > EndiCHI)//EndiCHI =0;
             {
                 this.transform.position = new Vector3(transform.position.x + Speed, transform.position.y - Speed, -0.0f);
-                if (this.transform.position.x > -25.0f)
+                if (this.transform.position.y <= 0.0f)
                 {
 
                     SceneManager.LoadScene("M");//シーンの切り替え
