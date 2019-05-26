@@ -12,7 +12,7 @@ public class Start_UmeL : MonoBehaviour
     }
     void EdaaMetastasisSwitchON() {
         EtaaMetastasisSwitch = true;
-        Destroy(gameObject, 5.0f);
+        Destroy(gameObject, 3.0f);
     
 
     }

@@ -9,12 +9,17 @@ public class Start_StartController : MonoBehaviour
     //public GameObject Camera;
     public GameObject Ochihana1;
     public int i;
+    void Start() {
+        
+    }
     //GameObject.Find("GameObject.name").SendMessage("Void.ma,e");//public private
     void GameStart() {
 
         if (i < 1)
         {
+            
             Debug.Log("GameStart   UmehanaScaleEnlarge  タイトル画像全体拡大 梅枝移動");//タイトル画像全体拡大
+            Ochi();
             UmeEdeMetastasis();
             UmehanaScaleEnlarge();
 
@@ -74,6 +79,6 @@ public class Start_StartController : MonoBehaviour
        // SceneManager.LoadScene("M");//シーンの切り替え
     }
     void Ochi() {
-        Ochihana1 = Instantiate(Ochihana1, new Vector3(-20.0f,30.0f, 15.0f), Quaternion.identity);　//花びらが上のから落ちるエフェクト
+        Ochihana1 = Instantiate(Ochihana1, new Vector3(50,30.0f, 15.0f), Quaternion.identity);　//花びらが上のから落ちるエフェクト
     }
 }

@@ -12,11 +12,12 @@ public class Start_Camera : MonoBehaviour
     public bool CameraMetastasisSwitch = false;//カメラ転移
     public bool CameraEnlargeswitch = false;//カメラ拡大
     public bool CameraNihanawoOFF =true;
-    bool i = true;
+   
     public float Speed;//移転速度
     public float Acceleration;//加速度
     public float MAXAcceleration;//MAX移転速度
     public float TransformPositionX;//目的のX
+    public float CameraHanaTiming;
     public void Start()
     {
         Camera.main.orthographicSize = 13.7f;//最初のカメラサイズ
@@ -56,19 +57,19 @@ public class Start_Camera : MonoBehaviour
         if (CameraEnlargeswitch && this.transform.position.x> TransformPositionX)
         {
             if (Speed > MAXAcceleration){ Speed = MAXAcceleration;}// MAX移転速度
-            this.transform.position = new Vector3(transform.position.x - Speed, transform.position.y, -10.0f);
+            this.transform.position = new Vector3(transform.position.x - Speed, transform.position.y, -50.0f);
             Speed = Speed + Time.deltaTime * Acceleration;//加速度
         }
         else if(CameraEnlargeswitch &&this.transform.position.x < TransformPositionX)
         {
-            this.transform.position = new Vector3(TransformPositionX, transform.position.y, -10.0f);
+            this.transform.position = new Vector3(TransformPositionX, transform.position.y, -50.0f);
             CameraEnlargeswitch = false;
             Debug.Log("転移完成　CameraEnlarge" + CameraEnlargeswitch + "transform.position.y" + this.transform.position.y);//StartControllerに戻る
             GameObject.Find("StartController").SendMessage("Stagebudge");
         }
     }
     void CameraHana(){
-        if (this.transform.position.x < -250.0f && CameraNihanawoOFF)
+        if (this.transform.position.x < CameraHanaTiming && CameraNihanawoOFF)
         {
             CameraNihanawoOFF = false;
             GameObject.Find("ume").SendMessage("ImejiMetastasisSwitchON");// カメラ移動、
